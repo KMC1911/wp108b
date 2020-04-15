@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOMEWORK-FORM</title>
+<style>
+ * {
+  font-size: 16px;
+  margin: 0px;
+}
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border:1px solid papayawhip;
+  border-radius: 5px;
+  margin:5px 15px;
+  margin-left: 0;
+}
+.main {
+    margin: 20px;
+    padding: 10px;
+    
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:800px;
+  margin:0 auto;
+  
+
+}
+#title{
+  font-size: 50px;
+  color: white;
+  font-family:fantasy;
+  background-color: orange;
+  margin: 20px;
+}
+body {
+  background-image: url('10.png');
+}
+label{
+  font-family:Microsoft JhengHei;
+}
+footer {
+  background-color: #E38916;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  margin: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div align="center">
+<h1 id="title" >帳戶註冊</h1>
+</div>
+<div class="container">
+
+<form>
+<h2 style="font-size: 25px;">基本資料</h2>
+<lable for = "account name">| Account Name</lable><br/>
+<input type="text" id="accunt name" name="account name" placeholder="用戶名稱"  required><br/>
+
+<lable for ="Your name">| Your name</lable><br/>
+<lable for ="First name">  First name :</lable>
+<input type="text" id="firstname" name="firstname" placeholder="名字" style="width: 100px;" required >
+<lable for ="Last name"> / Last name :</lable>
+<input type="text" id="lastname" name="lastname" placeholder="姓氏" style="width: 100px;" required><br/>
+
+<lable for = "gender">| Gender</lable><br/>
+<input type=radio name=gender value=Male style="width: 5px;"> Male
+<input type=radio name=gender value=Female style="width: 5px;">  Female<br/>
+
+<label for="birth" required>| Birth</label><br/>
+<input type="date" id="birth" name="birth" style="width: 160px;" required><br/>
+
+<label for="email">| Email</label><br/>
+<input type="email" id="email" name="email" placeholder="電子信箱"><br/>
+
+<label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;width: 10px;"> Recieve more information</input></label><br/>
+
+<label for="account">| Password</label><br>
+<input type="pwd" id="account" name="account" placeholder="請輸入密碼"required><br/>
+
+<label for="reaccount">| Repeat-Password</label><br/>
+<input type="pwd" id="reaccount" name="reaccount" placeholder="請再次確認密碼"required><br/>
+
+<label for="country">| Country</label>
+<select id="country" name="country">
+<option value="country">請選擇您的國家/地區</option>
+<option value="taiwan">Taiwan</option>
+<option value="usa">USA</option>
+<option value="australia">Australia</option>
+<option value="canada">Canada</option>
+<option value="china">China</option>
+<option value="japan">Japan</option>
+<option value="others">Others</option>
+</select><br/>
+
+<label>| Message :</label><br/>
+<textarea name="message"></textarea><br/>
+
+<input type="submit" value="Sign Up" style="width: 80px;margin-left: 0;"><br/>
+
+</form> </div>
+
+<div>
+  <footer>
+  <p>相關資訊</p>
+  <p>客服電話：06-123456 / 信箱：abcd@gmail.com / 地址：國立金門大學</p>
+</footer>
+</div>
+
+
+</body>
+</html>
