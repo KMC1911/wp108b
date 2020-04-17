@@ -5,4 +5,4 @@ function n(num){
     }
     return num;
     }
-    console.log(n(10));
+    console.log('10!=',n(10));
