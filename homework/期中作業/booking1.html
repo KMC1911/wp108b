@@ -155,7 +155,22 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+#title{
+  font-size: 50px;
+  color: white;
+  font-family:fantasy;
+  background-color: orange;
+  margin: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:800px;
+  margin:0 auto;
+  
 
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -219,9 +234,156 @@ body {
 
 
 </div>
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
+
+    <div align="center">
+      <h1 id="title" >訂位購票</h1>
+      </div>
+      <div class="container">     
+<table width="100%" border="2" cellpadding="5" cellspacing="0">
+<tbody>
+    <input type="button" value="單程" onclick="location.href='https://mailk8811.github.io/wp108b/homework/期中作業/booking.html'" style="width: 50px;font-size: 16px;">
+    <input type="button" value="來回" onclick="location.href='＃https://mailk8811.github.io/wp108b/homework/期中作業/booking1.html'" style="width: 50px;font-size: 16px;"></br></br>
+    <tr>
+    <td width="240" bgcolor="#666666">
+    起訖站
+    </td>
+    <td>
+    <span>
+    啟程地
+<select id="selectStart" name="selectStart" required="required"required>
+<option selected="selected" value="">請選擇...</option>
+<option value="１">松山</option>
+<option value="２">台中</option>
+<option value="３">嘉義</option>
+<option value="４">台南</option>
+<option value="５">高雄</option>
+<option value="６">澎湖</option>
+<option value="７">金門</option>
+<option value="８">花蓮</option>
+</select>
+    </span>
+
+    目的地
+    <select id="selectDestination" name="selectDestination" required>
+<option selected="selected" value="">請選擇...</option>
+<option value="１">松山</option>
+<option value="２">台中</option>
+<option value="３">嘉義</option>
+<option value="４">台南</option>
+<option value="５">高雄</option>
+<option value="６">澎湖</option>
+<option value="７">金門</option>
+<option value="８">花蓮</option>
+</select>
+    </td>
+</tr> 
+<tr>
+    <td width="240" bgcolor="#666666">
+    出發日期
+    </td>
+    <td>
+      <input type="date" id="time" name="time" style="width: 160px;" required>至
+        <input type="date" id="time" name="time" style="width: 160px;" required><br/>
+        
+    </td>
+</tr>
+<tr>
+    <td bgcolor="#666666">
+    座位喜好</td>
+    <td> 
+    <input name="seatCon:seatRadioGroup" checked="" id="seatRadio0" type="radio" class="input1" value="radio17">
+    無
+    <input name="seatCon:seatRadioGroup" id="seatRadio1" type="radio" class="input1" value="radio19">
+    靠窗優先
+    <span class="section_subtitle"> </span>
+    <input name="seatCon:seatRadioGroup" id="seatRadio2" type="radio" class="input1" value="radio21">
+        走道優先			
+    </td>
+</tr>	
+<tr>
+    <td bgcolor="#666666">
+    票數</td>
+    <td align="left"><span>
+<span>
+
+<span>全票</span> 
+<select name="ticketPanel:rows:0:ticketAmount">
+<option value="0F">0</option>
+<option selected="selected" value="1F">1</option>
+<option value="2F">2</option>
+
+</select>
+
+</span><span>
+
+<span>孩童票(6-11歲)</span> 
+<select name="ticketPanel:rows:1:ticketAmount">
+<option selected="selected" value="0H">0</option>
+<option value="1H">1</option>
+<option value="2H">2</option>
+
+</select>
+
+</span><span>
+
+<span>愛心票</span> 
+<select name="ticketPanel:rows:2:ticketAmount">
+<option selected="selected" value="0W">0</option>
+<option value="1W">1</option>
+<option value="2W">2</option>
+
+</select>
+
+</span><span>
+
+<span>敬老票(65歲以上)</span> 
+<select name="ticketPanel:rows:3:ticketAmount">
+<option selected="selected" value="0E">0</option>
+<option value="1E">1</option>
+<option value="2E">2</option>
+
+</select>
+
+</span><span>
+
+<span>離島居民優惠票</span> 
+<select name="ticketPanel:rows:4:ticketAmount" style="background-color: rgb(255, 255, 255);">
+<option selected="selected" value="0P">0</option>
+<option value="1P">1</option>
+<option value="2P">2</option>
+
+</select>
+
+</span><span>
+  
+    <span>促銷優惠票</span> 
+    <select name="ticketPanel:rows:4:ticketAmount" style="background-color: rgb(255, 255, 255);">
+    <option selected="selected" value="0P">0</option>
+    <option value="1P">1</option>
+    <option value="2P">2</option>
+
+    </select>
+    
+    </span>
+    <span>
+  
+        <span>離島居民促銷優惠票</span> 
+        <select name="ticketPanel:rows:4:ticketAmount" style="background-color: rgb(255, 255, 255);">
+        <option selected="selected" value="0P">0</option>
+        <option value="1P">1</option>
+        <option value="2P">2</option>
+        
+        </select>
+        
+        </span>
+</span></td>
+</tr>
+	
+</tbody>
+</table>
+</br>
+<input type="submit" value="搜尋" style="width: 80px;margin-left:700px;font-size: 16px;"><br/>
+</div>
 </div>
 </div>
 
